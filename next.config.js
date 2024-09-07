@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -26,10 +28,13 @@ const nextConfig = {
         hostname: "placehold.co",
       },
     ],
-    typescript: {
-      ignoreBuildErrors: true,
-    },
   },
 };
 
 module.exports = nextConfig;
+
+// module.exports = {
+//   experimental: {
+//     runtime: 'edge', // Enables Edge runtime, necessary for middleware
+//   },
+// };
